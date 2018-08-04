@@ -11,24 +11,20 @@
 <body>
     <div class="wrapper">
         <h1>Rem Calculator</h1>
-
-        <div>
-            <label>
-                Enter Default Pixel Size
-            </label>
-            <input type="text" name="default-value"/>
-        </div>
-        <div>
-            <label>
-                Enter Pixel Size to Convert
-            </label>
-            <input type="text" name="pixel-value"/>
-            <label>
-                Rem Size
-            </label>
-            <span class="rem-size"></span>
-        </div>
-        <input type="button" value="Convert" name="convert" />
+        <form>
+            <div>
+                <label for="default-value">Enter Default Value : </label>
+                <input type="text" id="default-value" value="16" />
+            </div>
+            <div>
+                <label for="pixel-value">Enter Pixel Value :</label>
+                <input type="text" id="pixel-value" value="20" />
+            </div>
+            <div>
+                <label for="rem-value">Rem Value :</label>
+                <input type="text" id="rem-value" value="1 rem" disabled />
+            </div>
+        </form>
     </div>
     <script src="./js/convert.js" type="text/javascript"></script>
 </body>
